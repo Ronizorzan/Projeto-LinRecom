@@ -7,7 +7,7 @@ import gc
 app = Flask(__name__)
 
 # Carregar modelo SVD
-with open("svd_model.pkl", "rb") as f:
+with open("svd_alternative_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 # Carregar metadados dos filmes
