@@ -1,0 +1,26 @@
+# 1. Base: Imagem leve do Python
+FROM python:3.9-slim
+
+# 2. Instala dependências de sistema (necessárias para compilar a Surprise)
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    gcc \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# 3. Copia apenas os arquivos de dependência primeiro (otimiza o cache)
+COPY pyproject.toml .
+
+# 4. Instala o que é necessário para a build
+RUN pip install --no-cache-dir numpy setuptools wheel
+RUN pip install --no-cache-dir .
+
+# 5. Copia o restante do código e o modelo .pkl
+COPY . .
+
+# 6. Expõe a porta que o Flask usará
+EXPOSE 5000
+
+# 7. Comando para rodar a API
+CMD ["python", "app.py"]
