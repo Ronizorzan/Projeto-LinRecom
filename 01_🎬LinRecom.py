@@ -48,18 +48,19 @@ with st.sidebar:
 
 <div class="footer">
     <p><strong>Desenvolvido por: Ronivan</strong></p>
-    <a href="https://github.com/Ronizorzan/Ronizorzan/blob/master/" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+    <a href="http://107.22.129.114:5678/webhook/4091fa09-fb9a-4039-9411-7104d213f601/chat" target="_blank">
+        <img src="https://cdn-icons-gif.flaticon.com/12205/12205168.gif" alt="Film Reel Icon">
+    </a>
+    <a href="https://github.com/Ronizorzan/Projeto-LinRecom" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/128/2504/2504911.png" alt="GitHub">
     </a>
     <a href="https://www.linkedin.com/in/ronivan-zorzan-barbosa" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384072.png" alt="LinkedIn">
     </a>
     <a href="mailto:ronizorzan1992@gmail.com" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png" alt="Email">
     </a>
-    <a href="https://share.streamlit.io/user/ronizorzan" target="_blank">
-        <img src="https://images.seeklogo.com/logo-png/44/1/streamlit-logo-png_seeklogo-441815.png" alt="Streamlit">
-    </a>
+    
 </div>
 """, unsafe_allow_html=True)
 

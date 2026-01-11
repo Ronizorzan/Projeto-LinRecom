@@ -61,6 +61,7 @@ Explicações claras sobre o funcionamento do modelo e métricas de desempenho.
 📬 Contato
 
 - 📧 Desenvolvido por Ronivan ronizorzan@gmail.com
-- 🔗 LinkedIn www.linkedin.com/in/ronivan-zorzan-barbosa
+- 🔗 LinkedIn: www.linkedin.com/in/ronivan-zorzan-barbosa
+- 🚀 Interface Web do Projeto: 192.168.1.70:8503
 
 > "Recomendar é conectar. Este sistema transforma dados em experiências memoráveis."

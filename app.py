@@ -7,17 +7,17 @@ import gc
 app = Flask(__name__)
 
 # Carregar modelo SVD
-with open("svd_alternative_model.pkl", "rb") as f:
+with open("svd_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 # Carregar metadados dos filmes
-items_df = pd.read_parquet("movies.parquet")
+items_df = pd.read_parquet("data/movies.parquet")
 
 # Carregar base de similaridade entre usuários
-user_sim_df = pd.read_parquet("user_similarity_top3.parquet")  # userId, similarUserId, similarity
+user_sim_df = pd.read_parquet("data/user_similarity_top3.parquet")  # userId, similarUserId, similarity
 
 # Carregar recomendações pré-calculadas dos usuários similares
-top3_by_user = pd.read_parquet("top3_by_user.parquet")
+top3_by_user = pd.read_parquet("data/top3_by_user.parquet")
 
 
 def get_similar_user_recommendations(user_id, top_n=3):
@@ -85,4 +85,4 @@ def recommend():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(debug=False, port=5000)
