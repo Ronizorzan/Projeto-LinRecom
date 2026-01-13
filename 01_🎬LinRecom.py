@@ -8,7 +8,7 @@ st.set_page_config("🎬 Sistema de Recomendação de Filmes", layout="wide")
 # 🎛️ Inputs do usuário
 with st.sidebar:
     st.markdown("## 🎯 Personalize sua recomendação")
-    user_id = st.number_input("👤 ID do usuário:", min_value=1, value=1, step=1, max_value=10000)
+    user_id = st.number_input("👤 ID do usuário:", min_value=1, value=1, step=1, max_value=40000)
     n = st.slider("🎬 Quantidade de recomendações:", min_value=1, max_value=4, value=2)
     button = st.button("🔍 Obter recomendações")
     
