@@ -32,11 +32,16 @@ Treinamento com SVD: Redução de dimensionalidade para extrair padrões latente
 
 ### 2. 🧱 Desafios Superados
 
-Os desafios encontrados durante a construção desse projeto foram desafios comuns enfrentados em projetos desse tipo:
-> Esparsidade do conjunto de dados: O comjunto de dados possuía mais de 25,000,000 registros, o que o tornava extremamente custoso em um ambiente com recursos limitados como o kaggle.
-> - Solução -> Conversão de tipos e matrizes esparsas para economia de recursos computacionais
-> O modelo SVD criado era grande (mais de 700mb) o que é extremamente custoso para um modelo que precisa ser disponibilizado através de uma API
-> - Solução -> Uso de docker para empacotamento do projeto e serviços da Aws como App Runner para deploy.
+Durante o desenvolvimento deste projeto, alguns obstáculos típicos de cenários semelhantes precisaram ser enfrentados:
+
+- **Esparsidade do conjunto de dados**  
+  O dataset continha mais de **25 milhões de registros**, o que tornava o processamento extremamente custoso em um ambiente com recursos limitados, como o Kaggle.  
+  **Solução:** Conversão de tipos e uso de matrizes esparsas para reduzir o consumo de memória, além da adoção do **PyArrow** para otimização do desempenho.
+
+- **Tamanho do modelo gerado**  
+  O modelo SVD resultante era bastante grande, como já era esperado. Os desafios de colocar um modelo desse porte em produção são significativos, especialmente quando exposto via API.  
+  **Solução:** Utilização de uma instância personalizada do **Amazon EC2**, garantindo recursos adequados para disponibilizar o modelo em produção de forma eficiente.
+
 
 ### 3. 📐 Similaridade do Cosseno
 
@@ -70,6 +75,6 @@ Explicações claras sobre o funcionamento do modelo e métricas de desempenho.
 
 - 📧 Desenvolvido por Ronivan ronizorzan@gmail.com
 - 🔗 LinkedIn: www.linkedin.com/in/ronivan-zorzan-barbosa
-- 🚀 Interface Web do Projeto: 192.168.1.70:8503
+- 🎬 Interface Web do Projeto: http://174.129.71.84:8501/
 
 > "Recomendar é conectar. Este sistema transforma dados em experiências memoráveis."
