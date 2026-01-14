@@ -39,7 +39,7 @@ Durante o desenvolvimento deste projeto, alguns obstáculos típicos de cenário
   **Solução:** Conversão de tipos e uso de matrizes esparsas para reduzir o consumo de memória, além da adoção do **PyArrow** para otimização do desempenho.
 
 - **Tamanho do modelo gerado**  
-  O modelo SVD resultante era bastante grande, como já era esperado. Os desafios de colocar um modelo desse porte em produção são significativos, especialmente quando exposto via API.  
+  O modelo SVD resultante era bastante grande (aprox 700MB), como já era esperado. Os desafios de colocar um modelo desse porte em produção são significativos, especialmente quando exposto via API.  
   **Solução:** Utilização de uma instância personalizada do **Amazon EC2**, garantindo recursos adequados para disponibilizar o modelo em produção de forma eficiente.
 
 
@@ -74,7 +74,8 @@ Explicações claras sobre o funcionamento do modelo e métricas de desempenho.
 📬 Contato
 
 - 📧 Desenvolvido por Ronivan ronizorzan@gmail.com
-- 🔗 LinkedIn: www.linkedin.com/in/ronivan-zorzan-barbosa
-- 🎬 Interface Web do Projeto: http://174.129.71.84:8501/
+- 🔗 LinkedIn: http://www.linkedin.com/in/ronivan-zorzan-barbosa
+- 🎬 Interface Web do Projeto: http://54.91.61.53:8501
+- 🤖 Agente do Projeto: http://107.22.129.114:5678/webhook/4091fa09-fb9a-4039-9411-7104d213f601/chat
 
 > "Recomendar é conectar. Este sistema transforma dados em experiências memoráveis."
